@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="local/interest_survey/db" VERSION="2025112000" COMMENT="Interest Survey plugin DB">
+    <TABLES>
+        <TABLE NAME="local_interest_survey" COMMENT="Stores survey results">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+                <FIELD NAME="fullname" TYPE="char" LENGTH="255" NOTNULL="false"/>
+                <FIELD NAME="email" TYPE="char" LENGTH="255" NOTNULL="false"/>
+                <FIELD NAME="department" TYPE="char" LENGTH="255" NOTNULL="false"/>
+                <FIELD NAME="date" TYPE="int" LENGTH="10" NOTNULL="false"/>
+                <FIELD NAME="totalscore" TYPE="int" LENGTH="10" NOTNULL="true"/>
+                <FIELD NAME="classification" TYPE="char" LENGTH="50" NOTNULL="true"/>
+                <FIELD NAME="category_scores" TYPE="text" NOTNULL="false"/>
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
